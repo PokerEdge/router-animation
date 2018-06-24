@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { OneComponent } from './one/one.component';
 import { TwoComponent } from './two/two.component';
 import { ThreeComponent } from './three/three.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { DescriptionComponent } from './description/description.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     OneComponent,
     TwoComponent,
-    ThreeComponent
+    ThreeComponent,
+    NotfoundComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,

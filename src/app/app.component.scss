@@ -1,13 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+app-root div {
+  margin: 0;
+  padding: 0;
+}
+
 .main {
   position: relative;
   width: 100vw;
-  height: 80vh;
+  height: 60vh;
+  margin: 0 auto;
+}
+
+.navigation {
+  position: relative;
+  width: 100vw;
+  height: 6vh;
   margin: 0 auto;
 }
 
 nav {
-  background-color: tomato;
+  // TODO: Values must be dynamic bound to a boolean class attribute in the view
+  background: dodgerblue linear-gradient(120deg, #30cde2 0, #306efe 100%) no-repeat;
+  // background: rgba(255, 255, 255, 0.0);
   color: #fff;
+  margin: 0;
   padding: 10px 20px;
 
   a {
@@ -18,7 +39,8 @@ nav {
       letter-spacing: 1;
       color: #fff;
   }
-  a:hover {
-    text-decoration: underline;
-  }
+}
+
+router-outlet {
+  display: none;
 }

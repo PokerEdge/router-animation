@@ -1,10 +1,12 @@
-
-<nav>
-  <a routerLink="/one" routerLinkActive="active">One</a>
-  <a routerLink="/two" routerLinkActive="active">Two</a>
-  <a routerLink="/three" routerLinkActive="active">Three</a>
-</nav>
-
+<!-- <div class="navigation">
+  <nav>
+    <a routerLink="/one" routerLinkActive="active">One</a>
+    <a routerLink="/two" routerLinkActive="active">Two</a>
+    <a routerLink="/three" routerLinkActive="active">Three</a>
+  </nav>
+</div> -->
 <div class="main" [@animRoutes]="getPage(appOutlet)">
   <router-outlet #appOutlet="outlet"></router-outlet>
 </div>
+
+<app-description></app-description>
